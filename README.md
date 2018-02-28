@@ -1,6 +1,6 @@
 # shellAutoUpdateIpa
 
-iOS一键自动打包上传蒲公英与App Store
+iOS一键自动打包上传蒲公英或App Store
 
 
 # 使用方法:

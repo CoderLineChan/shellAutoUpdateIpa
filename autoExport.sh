@@ -2,7 +2,7 @@
 
 # 使用方法:
 # 下载项目, 把项目中的三个文件 放入与工程相同目录下
-# 再修改当前文件 三个#号开头的配置参数   ###
+# 再修改当前文件 四个#号开头的配置参数   ####
 # 最后执行这个.sh文件
 
 
@@ -48,16 +48,16 @@ echo "Place enter the number you want to export ? [ 1:app-store  2:debug-ad-hoc 
 read number
 done
 
-####(plist文件名称要与实际文件名与路径称相同)
+#(plist文件名称要与实际文件名与路径称相同)
 if [ $number == 1 ];then
 development_mode=Release
-exportOptionsPlistPath=${project_path}/exportConfig/exportAppstore.plist
+exportOptionsPlistPath=${project_path}/exportAppstore.plist
 elif [ $number == 2 ];then
 development_mode=Debug
-exportOptionsPlistPath=${project_path}/exportConfig/exportTest.plist
+exportOptionsPlistPath=${project_path}/exportTest.plist
 else
 development_mode=Release
-exportOptionsPlistPath=${project_path}/exportConfig/exportTest.plist
+exportOptionsPlistPath=${project_path}/exportTest.plist
 fi
 
 echo '*** --------- ***'
